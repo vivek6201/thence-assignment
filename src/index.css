@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Manrope:wght@200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Manrope, sans-serif;
+}
+
+.alice-carousel__dots{
+  max-width: fit-content;
+  display: flex;
+}
+
+.alice-carousel__dots-item{
+  background-color: #E4E3E3;
+}
+
+.alice-carousel__dots-item __active{
+  background-color: #2DA950;
+}
