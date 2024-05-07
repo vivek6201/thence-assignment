@@ -9,4 +9,4 @@
 - then follow the generated link to open the project in the browser.
 
 # Deployed Link 
-    - https://brunel-kappa.vercel.app/
+    https://brunel-kappa.vercel.app/
