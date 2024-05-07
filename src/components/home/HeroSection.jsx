@@ -78,7 +78,7 @@ const HeroSection = () => {
             alt="human"
             className="w-[500px] rounded-3xl aspect-"
           />
-          <Card className="absolute top-44 md:top-32 -left-10 md:-left-20 shadow-lg bg-white rounded-xl md:rounded-3xl md:p-6">
+          <Card className="absolute hover:bg-gray-100 transition-colors duration-300 cursor-pointer top-44 md:top-32 -left-10 md:-left-20 shadow-lg bg-white rounded-xl md:rounded-3xl md:p-6">
             <div className="relative">
               <img
                 src={spark}
@@ -95,7 +95,7 @@ const HeroSection = () => {
             </p>
           </Card>
 
-          <Card className="absolute top-96 lg:top-90 -left-8 shadow-lg bg-white rounded-full py-4 px-5">
+          <Card className="absolute top-96 lg:top-90 hover:bg-gray-100 transition-colors duration-300 cursor-pointer -left-8 shadow-lg bg-white rounded-full py-4 px-5">
             <div className="flex gap-1 md:gap-2 items-center">
               <img src={rocket} alt="" />
               <div className="flex flex-col gap-1 md:gap-y-2">
@@ -106,7 +106,7 @@ const HeroSection = () => {
               </div>
             </div>
           </Card>
-          <Card className="absolute -bottom-10 lg:top-90 -right-10 shadow-lg bg-[#002E18] rounded-3xl p-6 xl:p-7">
+          <Card className="absolute -bottom-10 lg:top-90 -right-10 shadow-lg bg-[#002E18] hover:bg-green-900 transition-colors duration-300 cursor-pointer rounded-3xl p-6 xl:p-7">
             <div className="flex gap-1 md:gap-2 items-baseline">
               <p className="text-3xl xl:text-4xl font-bold text-white">$0.5</p>
               <p className="text-gray-400 font-semibold uppercase">million</p>
