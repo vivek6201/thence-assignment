@@ -36,7 +36,9 @@ const AskQuestionSection = () => {
       isOpen: false,
     },
   ];
+  
 
+  //this is used to maintain the state of accordian
   const [accordian, setAccordian] = useState(questions);
 
   const toggleAccordion = (accordionkey) => {
@@ -69,7 +71,7 @@ const AskQuestionSection = () => {
               onClick={() => toggleAccordion(item.id)}
             >
               <div className="flex items-center justify-between">
-                <p className="text-base sm:text-lg md:text-xl font-semibold max-w-[70%] md:max-w-[60%] select-none">
+                <p className="text-base sm:text- md:text-xl font-semibold max-w-[70%] md:max-w-[60%] select-none">
                   {item.question}
                 </p>
                 {item.isOpen ? (

@@ -36,6 +36,8 @@ const items = [
   </p>,
 ];
 
+
+// alice carausel is used moving carausel in the homepage.
 const Gallery = () => (
   <AliceCarousel
     mouseTracking

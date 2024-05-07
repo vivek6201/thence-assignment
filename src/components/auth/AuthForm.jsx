@@ -5,7 +5,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { IoIosWarning } from "react-icons/io";
 import { schema } from "../../validations/formValidation";
 
-const AuthFrom = ({onSubmit}) => {
+const AuthFrom = ({ onSubmit }) => {
+
+  
+  // used react-hook-form and yup for strict form validations.
   const {
     register,
     handleSubmit,

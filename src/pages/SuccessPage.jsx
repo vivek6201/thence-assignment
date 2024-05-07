@@ -4,9 +4,12 @@ import tick from "../assets/tick.svg";
 import { useNavigate } from "react-router-dom";
 
 const SuccessPage = () => {
+
+  // used to maintain the state of the timer.
   const [time, setTime] = useState(5);
   const navigate = useNavigate();
 
+  // this useEffect will render only once when the components get mounted
   useEffect(() => {
     const interval = setInterval(() => {
       if (time > 0) {
@@ -14,11 +17,14 @@ const SuccessPage = () => {
       }
     }, [1000]);
 
+
+    // this function clears the setInternal when the component get unmounted
     return () => {
       clearInterval(interval);
     };
   }, []);
 
+  //when the timer goes zero this automatically redirects user to home page.
   if (time === 0) navigate("/");
 
   return (

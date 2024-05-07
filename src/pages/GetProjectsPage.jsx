@@ -6,10 +6,12 @@ import AuthForm from "../components/auth/AuthForm";
 const GetProjects = () => {
   const navigate = useNavigate();
 
+  //this function navigates user to the success page after a successful form submission.
   const onSubmit = (values) => {
     console.log(values)
     navigate("/success");
   };
+  
   return (
     <div className="grid grid-rows-[120px_1fr] h-screen">
       <AuthNavbar />

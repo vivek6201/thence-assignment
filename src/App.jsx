@@ -4,6 +4,9 @@ import GetProjects from "./pages/GetProjectsPage";
 import SuccessPage from "./pages/SuccessPage";
 
 function App() {
+
+  // React router dom is used to navigate between the pages.
+
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
